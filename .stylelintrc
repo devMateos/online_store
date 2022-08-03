@@ -4,13 +4,14 @@
   "rules": {
     "declaration-colon-newline-after": "always-multi-line",
     "selector-type-no-unknown": null,
+    "indentation": 4,
     "property-no-unknown": [
-        true,
-        {
-          "ignoreProperties": [
-            "content-visibility"
-          ]
-        }
+      true,
+      {
+        "ignoreProperties": [
+          "content-visibility"
+        ]
+      }
     ]
   }
 }
