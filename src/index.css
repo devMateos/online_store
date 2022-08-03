@@ -128,7 +128,12 @@ nav {
 .mobile-menu {
     position: absolute;
     top: 60px;
+    left: -400px;
     padding: 24px;
+    transition: 500ms;
+}
+.slide-rigth {
+    left: 0;
 }
 .mobile-menu a {
     text-decoration: none;

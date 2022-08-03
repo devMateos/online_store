@@ -9,6 +9,6 @@ emailMenu.addEventListener("click", () => {
 });
 
 burguerMenu.addEventListener("click", () => {
-    mobileMenu.classList.toggle("inactive");
+    mobileMenu.classList.toggle("slide-rigth");
 });
 
