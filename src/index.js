@@ -6,24 +6,24 @@ const burguerMenu = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 const cartMenuIcon = document.querySelector(".navbar-shopping-cart");
-const aside = document.querySelector(".product-detail");
+const shoppingCartContainer = document.querySelector("#shopping-cart-container");
 
 const cardsContainer = document.querySelector(".cards-container");
 
 //Functions for create dinamic menus
 emailMenu.addEventListener("click", () => {
-    const isAsideOpen = aside.classList.contains("slide-left");
+    const isAsideOpen = shoppingCartContainer.classList.contains("slide-left");
     if (isAsideOpen) {
-        aside.classList.remove("slide-left");
+        shoppingCartContainer.classList.remove("slide-left");
     }
 
     desktopMenu.classList.toggle("inactive");
 });
 
 burguerMenu.addEventListener("click", () => {
-    const isAsideOpen = aside.classList.contains("slide-left");
+    const isAsideOpen = shoppingCartContainer.classList.contains("slide-left");
     if (isAsideOpen) {
-        aside.classList.remove("slide-left");
+        shoppingCartContainer.classList.remove("slide-left");
     }
 
     mobileMenu.classList.toggle("slide-rigth");
@@ -41,7 +41,7 @@ cartMenuIcon.addEventListener("click", () => {
         desktopMenu.classList.add("inactive");
     }
 
-    aside.classList.toggle("slide-left");
+    shoppingCartContainer.classList.toggle("slide-left");
 });
 
 //Array with products
